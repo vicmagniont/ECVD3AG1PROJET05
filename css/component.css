@@ -98,11 +98,15 @@ background-color: #c2afa3}
 	font-size: 5em;
 	font-weight: 300;
 	line-height: 1;
+	font-family: 'Rubik', sans-serif;
+
 }
 
 .cbp-so-section p {
 	font-size: 2em;
 	font-weight: 300;
+	font-family: 'Roboto Mono', monospace;
+
 }
 
 /* Sides */

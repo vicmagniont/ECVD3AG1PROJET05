@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Blueprint: Fixed Background Scrolling Layout</title>
+		<title>How to Make a coffee</title>
 		<meta name="description" content="Blueprint: Fixed Background Scrolling Layout" />
 		<meta name="keywords" content="background scrolling, fixed background, background-attachment, jquery" />
 		<meta name="author" content="Codrops" />
@@ -16,6 +16,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:700" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Rubik:900" rel="stylesheet">
 	</head>
+
 	<body>
 		<div class="container">
 			<div id="cbp-fbscroller" class="cbp-fbscroller">
@@ -33,7 +34,7 @@
 					</header>
 
 <p class="intro"> First you need</p>
-<a href="#fbsection2" class=bouton>"<img class="bouton" src="images/bouton.svg"/></a>
+<a href="#fbsection2" class="js-scrollTo" class=bouton>"<img class="bouton" src="images/bouton.svg"/></a>
 				</section>
 				<section id="fbsection2">
 
@@ -56,7 +57,7 @@
 	</figure>
 	<article class="cbp-so-side cbp-so-side-right">
 		<h2>You have to</h2>
-		<p>Press the power button, put water in the tank and coffe in the filter ; install the tass than press the starting button when the machine is reasy.</p>
+		<p>Press the power button, put water in the tank and coffe in the filter ; install the tass than press the starting button when the machine is ready.</p>
 	</article>
 </section>
 </div>
@@ -67,8 +68,8 @@
 					<div id="cbp-so-scroller3" class="cbp-so-scroller">
 					<section class="cbp-so-section">
 					<article class="cbp-so-side cbp-so-side-left">
-						<h2>Marzipan gingerbread</h2>
-						<p>Soufflé bonbon jelly cotton candy liquorice dessert jelly bear claw candy canes. Pudding halvah bonbon marzipan powder. Marzipan gingerbread sweet jelly.</p>
+						<h2>Chose your side</h2>
+						<p>You have to chose to take suggar either or not. But you have to know that suggar mouth your arteries. And coffee is bitter, like it or leave it.</p>
 					</article>
 					<figure class="cbp-so-side cbp-so-side-right">
 						<img src="images/3.svg" alt="img01">
@@ -79,12 +80,10 @@
 				<section id="fbsection5">
 					<div id="cbp-so-scroller4" class="cbp-so-scroller">
 					<section class="cbp-so-section">
-						<figure class="cbp-so-side cbp-so-side-left">
-							<img src="images/4.png" alt="img01">
-						</figure>
+
 						<article class="cbp-so-side cbp-so-side-right">
-							<h2>Carrot cake</h2>
-							<p>Sesame snaps sweet wafer danish. Chupa chups carrot cake icing donut halvah bonbon. Chocolate cake candy marshmallow pudding dessert marzipan jujubes sugar plum.</p>
+							<h2>And finally</h2>
+							<p>Have a good cup of coffee. Day can start.</p>
 						</article>
 					</section>
 				</div>
@@ -118,6 +117,18 @@ new cbpScroller( document.getElementById( 'cbp-so-scroller3' ) );
 <script>
 new cbpScroller( document.getElementById( 'cbp-so-scroller4' ) );
 </script>
+
+<script>
+	$(document).ready(function() {
+		$('.js-scrollTo').on('click', function() { // Au clic sur un élément
+			var page = $(this).attr('href'); // Page cible
+			var speed = 750; // Durée de l'animation (en ms)
+			$('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+			return false;
+		});
+	});
+  </script>
+
 
 	</body>
 </html>
