@@ -1,2 +1,3 @@
-# ECVD3AG1PROJET05
-HOW TO MAKE A COFFEE
+Created by Codrops
+
+Please read more about our license here: http://tympanus.net/codrops/licensing/ 

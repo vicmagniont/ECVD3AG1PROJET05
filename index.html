@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Blueprint: Fixed Background Scrolling Layout</title>
+		<meta name="description" content="Blueprint: Fixed Background Scrolling Layout" />
+		<meta name="keywords" content="background scrolling, fixed background, background-attachment, jquery" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/default.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<script src="js/modernizr.custom.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Rubik:900" rel="stylesheet">
+	</head>
+	<body>
+		<div class="container">
+			<div id="cbp-fbscroller" class="cbp-fbscroller">
+				<nav>
+					<a href="#fbsection1" class="cbp-fbcurrent">Section 1</a>
+					<a href="#fbsection2">Section 2</a>
+					<a href="#fbsection3">Section 3</a>
+					<a href="#fbsection4">Section 4</a>
+					<a href="#fbsection5">Section 5</a>
+				</nav>
+				<section id="fbsection1">
+					<header class="clearfix">
+						<span>A guide to</span>
+						<h1>How to make a coffee</h1>
+					</header>
+
+<p class="intro"> First you need</p>
+<a href="#fbsection2" class=bouton>"<img class="bouton" src="images/bouton.svg"/></a>
+				</section>
+				<section id="fbsection2">
+
+					<div id="cbp-so-scroller1" class="cbp-so-scroller">
+		<section class="cbp-so-section">
+			<article class="cbp-so-side cbp-so-side-left">
+				<img src="images/0.svg" alt="img00">
+			</article>
+			<figure class="cbp-so-side cbp-so-side-right">
+				<img src="images/1.svg" alt="img01">
+			</figure>
+		</section>
+	</div>
+</section>
+				<section id="fbsection3">
+				<div id="cbp-so-scroller2" class="cbp-so-scroller">
+				<section class="cbp-so-section">
+	<figure class="cbp-so-side cbp-so-side-left">
+		<img src="images/machine.svg" alt="img01">
+	</figure>
+	<article class="cbp-so-side cbp-so-side-right">
+		<h2>You have to</h2>
+		<p>Press the power button, put water in the tank and coffe in the filter ; install the tass than press the starting button when the machine is reasy.</p>
+	</article>
+</section>
+</div>
+</section>
+
+
+				<section id="fbsection4">
+					<div id="cbp-so-scroller3" class="cbp-so-scroller">
+					<section class="cbp-so-section">
+					<article class="cbp-so-side cbp-so-side-left">
+						<h2>Marzipan gingerbread</h2>
+						<p>Soufflé bonbon jelly cotton candy liquorice dessert jelly bear claw candy canes. Pudding halvah bonbon marzipan powder. Marzipan gingerbread sweet jelly.</p>
+					</article>
+					<figure class="cbp-so-side cbp-so-side-right">
+						<img src="images/3.svg" alt="img01">
+					</figure>
+				</section>
+			</div>
+			</section>
+				<section id="fbsection5">
+					<div id="cbp-so-scroller4" class="cbp-so-scroller">
+					<section class="cbp-so-section">
+						<figure class="cbp-so-side cbp-so-side-left">
+							<img src="images/4.png" alt="img01">
+						</figure>
+						<article class="cbp-so-side cbp-so-side-right">
+							<h2>Carrot cake</h2>
+							<p>Sesame snaps sweet wafer danish. Chupa chups carrot cake icing donut halvah bonbon. Chocolate cake candy marshmallow pudding dessert marzipan jujubes sugar plum.</p>
+						</article>
+					</section>
+				</div>
+			</section>
+			</div>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<!-- jquery.easing by http://gsgd.co.uk/ : http://gsgd.co.uk/sandbox/jquery/easing/ -->
+		<script src="js/jquery.easing.min.js"></script>
+		<!-- waypoints jQuery plugin by http://imakewebthings.com/ : http://imakewebthings.com/jquery-waypoints/ -->
+		<script src="js/waypoints.min.js"></script>
+		<!-- jquery-smartresize by @louis_remi : https://github.com/louisremi/jquery-smartresize -->
+		<script src="js/jquery.debouncedresize.js"></script>
+		<script src="js/cbpFixedScrollLayout.min.js"></script>
+		<script src="js/classie.js"></script>
+		<script src="js/cbpScroller.js"></script>
+		<script>
+			$(function() {
+				cbpFixedScrollLayout.init();
+			});
+		</script>
+		<script>
+	new cbpScroller( document.getElementById( 'cbp-so-scroller1' ) );
+</script>
+<script>
+new cbpScroller( document.getElementById( 'cbp-so-scroller2' ) );
+</script>
+<script>
+new cbpScroller( document.getElementById( 'cbp-so-scroller3' ) );
+</script>
+<script>
+new cbpScroller( document.getElementById( 'cbp-so-scroller4' ) );
+</script>
+
+	</body>
+</html>
