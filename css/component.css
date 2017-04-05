@@ -55,6 +55,9 @@ html, body,
 
 #fbsection1 {
 	background-image: url(../images/1.jpg);
+	display: flex;
+	vertical-align: middle;
+	justify-content: center;
 }
 
 #fbsection2 {
@@ -209,4 +212,11 @@ html, body,
 	.cbp-so-side img {
 		max-width: 100%;
 	}
+}
+#introduction{
+	display: flex;
+	justify-content: center;
+	vertical-align: middle;
+	flex-wrap: wrap;
+	max-height: 100vh
 }
