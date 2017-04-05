@@ -58,18 +58,20 @@ html, body,
 }
 
 #fbsection2 {
-	background-image: url(../images/2.jpg);
+	background-image: url(../images/bg1.jpg);
 }
 
 #fbsection3 {
+	background-image: url(../images/bg3.jpg);
+
 background-color: #c2afa3}
 
 #fbsection4 {
-	background-image: url(../images/4.jpg);
+	background-image: url(../images/bg4.jpg);
 }
 
 #fbsection5 {
-	background-image: url(../images/5.jpg);
+	background-image: url(../images/bg5.jpg);
 }
 
 
