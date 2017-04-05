@@ -218,5 +218,5 @@ html, body,
 	justify-content: center;
 	vertical-align: middle;
 	flex-wrap: wrap;
-	max-height: 100vh
+	margin: 100px
 }
