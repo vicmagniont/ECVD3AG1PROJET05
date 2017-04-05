@@ -3,7 +3,6 @@ html, body,
 .container,
 .cbp-fbscroller,
 .cbp-fbscroller section {
-	height: 100%;
 }
 
 /* The nav is fixed on the right side  and we center it by translating it 50%
@@ -81,9 +80,7 @@ html, body,
 		overflow: hidden;
 }
 
-.cbp-so-section {
-	margin-bottom: 15em;
-}
+
 
 /* Clear floats of children */
 .cbp-so-section:before,
